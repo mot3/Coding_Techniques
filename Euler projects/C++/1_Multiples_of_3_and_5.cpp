@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
         if(i % 3 == 0 || i % 5 == 0)
             sum += i;
     }
-    final
+    
     cout << sum;
 
     cout << endl;
