@@ -26,8 +26,20 @@ int main() {
     for (int i = 0; i < 5; ++i) {
         cin >> ages[i];
     }
-    //your code goes here
     
+    int youngestAge = ages[0];
+
+    for(int i=1; i < 5; i++)
+    {
+        if(youngestAge > ages[i])
+            youngestAge = ages[i];
+    }
+
+    float percen = (50 * (float)youngestAge) / 100;
+
+    float discount = 50-percen;
+
+    cout << discount << endl;
     
     return 0;
 }
