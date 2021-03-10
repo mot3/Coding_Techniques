@@ -11,10 +11,10 @@ int main(int argc, char const *argv[])
 
     for (size_t i = 1; i < 1000; i++)
     {
-        if(i % 3 == 0 || i % 5 == 0)
+        if (i % 3 == 0 || i % 5 == 0)
             sum += i;
     }
-    
+
     cout << sum;
 
     cout << endl;
