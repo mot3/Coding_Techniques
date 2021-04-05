@@ -4,39 +4,43 @@
 
 using namespace std;
 
-string getAll()
+string getAdditional()
 {
-    ifstream additional("./../Additional files/8_Largest_product_in_a_series.txt");
-    string line;
     string alline;
-    while (getline(additional, line))
     {
-        alline += line;
+        ifstream additional("./../Additional files/8_Largest_product_in_a_series.txt");
+        string line;
+        while (getline(additional, line))
+        {
+            alline += line;
+        }
+        additional.close();
     }
-    additional.close();
     return alline;
 }
 
-long long getMulNum(string &str, size_t n)
+long long getMulNum(string &str, size_t n, size_t digit)
 {
     long long mul = 1;
 
-    for (size_t i = n; i < n + 13; i++)
+    for (size_t i = n; i < n + digit; i++)
     {
-        mul *= (long long)str[i] - 48;
+        mul *= (int)str[i] - 48;
     }
     return mul;
 }
 
 int main(int argc, char const *argv[])
 {
-    string allNum = getAll();
+    size_t digit = 13;
+    
+    string allNum = getAdditional();
 
     long long greatest = 0;
 
-    for (size_t i = 0; i < 1000; i++)
+    for (size_t i = 0; i < 1000-digit; i++)
     {
-        long long testG = getMulNum(allNum, i);
+        long long testG = getMulNum(allNum, i, digit);
         if (testG > greatest)
             greatest = testG;
     }
