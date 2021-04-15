@@ -30,7 +30,7 @@ long long getMulNum(string &str, size_t n, size_t digit)
     return mul;
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
     size_t digit = 13;
     

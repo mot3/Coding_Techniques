@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main()
 {
     int up = 100;
     int sumOFsquare = 0, squareOFsum = 0;

@@ -9,7 +9,7 @@ using namespace std;
 
 int reverse(int);
 
-int main(int argc, char const *argv[])
+int main()
 {
     int n = 0;
 

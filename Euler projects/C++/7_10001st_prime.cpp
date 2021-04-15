@@ -20,7 +20,7 @@ bool isPrime(int n)
     return true;
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
     int count = 10001, myPrime = 2, countPrime = 1;
 
