@@ -1,4 +1,4 @@
-// Description in bit.ly/3mR93TO
+// Description in https://bit.ly/3mR93TO
 
 #include <iostream>
 
